@@ -1,0 +1,24 @@
+@import "~bootstrap/scss/bootstrap";
+
+// Components
+@import "./variables";
+@import "./components/character-card";
+@import "./components/filters";
+
+body {
+    color: $purple;
+}
+
+header {
+    background: $purple;
+    color: $white;
+    text-align: left;
+    font-style: italic;
+    &.sticky {
+        box-shadow: 1px 5px $grey1;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
